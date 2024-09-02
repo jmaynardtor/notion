@@ -1,4 +1,4 @@
-//UPDATED: Sep 2, 2024 @ 13:13
+//UPDATED: Sep 2, 2024 @ 14:50
 //Most quotes are pulled from the stoic. app (getstoic.com). so credit goes to them unless otherwise commented.
 
 const affirmations = [
@@ -6,7 +6,6 @@ const affirmations = [
 	"I see possibilities in every objective that I encounter.",
 	"My mind is innovative and brilliant.",
 	"Happiness is a choice.",
-	"I am in control of my actions and responsible for them.", //This one is a Josh Maynard special :)
 	'"Is a world without pain possible? Then don\'t ask the impossible."%0D%0A- Marcus Aurelius',
 	"My gifts and talents are vast.",
 	"I am grateful for my freedom.",
