@@ -1,0 +1,118 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* layout is flexbox */
+body,
+.main,
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* auto light & dark themes  */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: rgb(245, 245, 245);
+    color: rgb(24, 24, 24);
+  }
+
+  a {
+    color: rgb(24, 24, 24);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(24, 24, 24);
+    color: rgb(245, 245, 245);
+  }
+
+  a {
+    color: rgb(245, 245, 245);
+  }
+}
+
+/* the only link is 'reload' icon */
+a {
+  text-decoration: none;
+}
+
+a :hover {
+  color: gray;
+}
+
+/* 'main' contains hero icon, card, and reload icon */
+.main {
+  min-height: 30%;
+  width: 60%;
+  min-width: 60%;
+}
+
+/* on small screens, main container is more narrow */
+@media (max-width: 600px) {
+  .main {
+    width: 85%;
+  }
+}
+
+/* card with text */
+.card {
+  margin: 1rem;
+  padding: 1rem 2rem;
+  height: 100%;
+  background-color: rgba(182, 224, 250, 0.479);
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+/* on big screens, card is wider and text is center-aligned */
+@media (min-width: 600px) {
+  .card {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.hero-icon {
+  font-size: 2rem;
+}
+
+.renew-btn-container {
+  font-size: 1.5rem;
+}
+
+/* animations on card change */
+.animation-out {
+  animation: 0.5s out;
+}
+
+@keyframes out {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.animation-in {
+  animation: 0.5s in;
+}
+
+@keyframes in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
